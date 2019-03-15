@@ -14,6 +14,28 @@ body {
   box-sizing: border-box;
   color: #262626; }
 
+.section-title {
+  font-size: 9rem;
+  margin-bottom: 3.5rem; }
+
+.section-paragraph {
+  font-size: 1.7rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6; }
+
+.Abore_Cahee_magna_aliqua__Ut_enim_ad_minim_veni {
+  font-size: 17px;
+  font-family: 'Raleway';
+  color: white;
+  line-height: 1.588;
+  text-align: left;
+  position: absolute;
+  left: 834.893px;
+  top: 1305.771px;
+  width: 499px;
+  height: 188px;
+  z-index: 150; }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -72,3 +94,28 @@ body {
   left: 188.92px;
   top: 555px;
   z-index: 160; }
+
+.section-about {
+  background-color: #00bcbc;
+  color: #fff; }
+  .section-about__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 8rem;
+    padding-bottom: 8rem; }
+  .section-about__text-container {
+    flex: 0 0 50%; }
+  .section-about__image {
+    flex: 0 0 50%; }
+
+.About_Us {
+  font-size: 90px;
+  font-family: 'Raleway';
+  color: white;
+  font-weight: bold;
+  line-height: 0.3;
+  position: absolute;
+  left: 832.879px;
+  top: 1200px;
+  z-index: 149; }
