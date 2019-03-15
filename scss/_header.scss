@@ -4,12 +4,60 @@
   background-size: cover;
   background-position: right;
 
-  &__text-container {
+  &__logo {
+    font-size: 5rem;
+    font-family: 'Pacifico';
+  }
+
+  &__navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__nav-item {
+    margin-left: 2rem;
+
+    a:link,
+    a:active,
+    a:visited {
+      color: $color-font-primary;
+      text-decoration: none;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      font-weight: bolder;
+    }
+  }
+
+  &__text-container {
   }
 
   &__title {
+    font-size: 6rem;
+    font-weight: 900;
+    margin-bottom: 3.5rem;
   }
+
+  &__paragraph {
+    font-size: 1.7rem;
+    margin-bottom: 3.5rem;
+  }
+}
+
+.GET_FREE_NOW {
+  font-size: 20px;
+  font-family: 'Raleway';
+  color: rgb(255, 255, 255);
+  line-height: 1.35;
+  position: absolute;
+  left: 188.92px;
+  top: 555px;
+  z-index: 160;
 }

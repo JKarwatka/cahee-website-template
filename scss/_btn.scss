@@ -1,0 +1,10 @@
+.btn:link,
+.btn:active,
+.btn:visited {
+  font-size: 2rem;
+  color: $color-font-secondary;
+  background-color: $color-btn-background;
+  padding: 2rem 2.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}

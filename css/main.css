@@ -6,28 +6,69 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 75%; }
-  @media (max-width: 1200px) {
-    html {
-      font-size: 62.5%; } }
-  @media (max-width: 992px) {
-    html {
-      font-size: 56.25%; } }
-  @media (max-width: 768px) {
-    html {
-      font-size: 50%; } }
+  font-size: 62.5%; }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #262626; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem; }
+
+.btn:link,
+.btn:active,
+.btn:visited {
+  font-size: 2rem;
+  color: #fff;
+  background-color: #ff6033;
+  padding: 2rem 2.5rem;
+  text-transform: uppercase;
+  text-decoration: none; }
 
 .header {
   min-height: 100vh;
   background-image: url(../img/hero_background.png);
   background-size: cover;
   background-position: right; }
-  .header__text-container {
+  .header__logo {
+    font-size: 5rem;
+    font-family: 'Pacifico'; }
+  .header__navbar {
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: space-between; }
+  .header__nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center; }
+  .header__nav-item {
+    margin-left: 2rem; }
+    .header__nav-item a:link,
+    .header__nav-item a:active,
+    .header__nav-item a:visited {
+      color: #262626;
+      text-decoration: none;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      font-weight: bolder; }
+  .header__title {
+    font-size: 6rem;
+    font-weight: 900;
+    margin-bottom: 3.5rem; }
+  .header__paragraph {
+    font-size: 1.7rem;
+    margin-bottom: 3.5rem; }
+
+.GET_FREE_NOW {
+  font-size: 20px;
+  font-family: 'Raleway';
+  color: white;
+  line-height: 1.35;
+  position: absolute;
+  left: 188.92px;
+  top: 555px;
+  z-index: 160; }
