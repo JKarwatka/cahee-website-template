@@ -1,0 +1,15 @@
+.header {
+  min-height: 100vh;
+  background-image: url(../img/hero_background.png);
+  background-size: cover;
+  background-position: right;
+
+  &__text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+  }
+}
