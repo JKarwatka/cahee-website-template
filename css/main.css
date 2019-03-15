@@ -51,6 +51,25 @@ body {
   text-transform: uppercase;
   text-decoration: none; }
 
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  height: 10rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  color: #262626;
+  background-color: white; }
+  .card__title {
+    font-size: 2rem;
+    flex: 1 0 auto;
+    text-align: center; }
+  .card__image {
+    border-left: 0.3rem solid #262626;
+    padding: 3rem;
+    flex: 0 0 20%; }
+
 .header {
   min-height: 100vh;
   background-image: url(../img/hero_background.png);
@@ -101,7 +120,7 @@ body {
   .section-about__container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 8rem;
     padding-bottom: 8rem; }
   .section-about__text-container {
@@ -119,3 +138,27 @@ body {
   left: 832.879px;
   top: 1200px;
   z-index: 149; }
+
+.section-services {
+  background-color: #70bfff;
+  color: #fff;
+  padding-bottom: 8rem;
+  padding-top: 8rem; }
+  .section-services__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .section-services__cards-container {
+    flex: 0 0 50%; }
+  .section-services__title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: stretch;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/services-background.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 0 0 50%; }

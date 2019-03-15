@@ -1,8 +1,10 @@
-@import './mixins';
-@import './variables';
+@import './abstracts/mixins';
+@import './abstracts/variables';
 @import './base';
 @import './typography';
-@import './container';
-@import './btn';
-@import './header';
-@import './section-about';
+@import './components/container';
+@import './components/btn';
+@import './components/card';
+@import './layout/header';
+@import './layout/section-about';
+@import './layout/section-services';

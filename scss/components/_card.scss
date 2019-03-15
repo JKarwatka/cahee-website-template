@@ -1,0 +1,23 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  height: 10rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1rem 1rem rgba( #000000, 0.2);
+  color: $color-font-primary;
+  background-color: white;
+
+  &__title {
+    font-size: 2rem;
+    flex: 1 0 auto;
+    text-align: center;
+  }
+
+  &__image {
+    border-left: 0.3rem solid $color-font-primary;
+    padding: 3rem;
+    flex: 0 0 20%;
+  }
+}
