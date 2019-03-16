@@ -1,0 +1,33 @@
+.section-subscribe {
+  background-image: url(../img/subscribe-background.png);
+  background-size: cover;
+  background-position: right;
+  padding-top: $padding-big;
+  padding-bottom: $padding-big;
+
+  &__title {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+  &__paragraph {
+    margin-bottom: 4rem;
+    max-width: 57rem;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: left;
+    align-items: stretch;
+  }
+
+  &__input {
+    font-size: 1.6rem;
+    padding: 2rem;
+    border: 0.2rem solid $color-font-primary;
+    min-width: 57rem;
+  }
+
+  &__button {
+    margin-left: 3rem;
+  }
+}

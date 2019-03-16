@@ -52,6 +52,9 @@ body {
 .btn--blue:visited, .btn--blue:active, .btn--blue:link {
   background-color: #5585a2; }
 
+.btn--green:visited, .btn--green:active, .btn--green:link {
+  background-color: #96b92c; }
+
 .btn--wide:visited, .btn--wide:active, .btn--wide:link {
   padding: 2rem 4rem; }
 
@@ -192,3 +195,27 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column; }
+
+.section-subscribe {
+  background-image: url(../img/subscribe-background.png);
+  background-size: cover;
+  background-position: right;
+  padding-top: 8rem;
+  padding-bottom: 8rem; }
+  .section-subscribe__title {
+    font-size: 4rem;
+    margin-bottom: 4rem; }
+  .section-subscribe__paragraph {
+    margin-bottom: 4rem;
+    max-width: 57rem; }
+  .section-subscribe__form {
+    display: flex;
+    justify-content: left;
+    align-items: stretch; }
+  .section-subscribe__input {
+    font-size: 1.6rem;
+    padding: 2rem;
+    border: 0.2rem solid #262626;
+    min-width: 57rem; }
+  .section-subscribe__button {
+    margin-left: 3rem; }

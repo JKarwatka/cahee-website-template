@@ -14,7 +14,15 @@
     &:visited,
     &:active,
     &:link {
-      background-color: #5585a2;
+      background-color: $color-btn-blue;
+    }
+  }
+
+  &--green {
+    &:visited,
+    &:active,
+    &:link {
+      background-color: $color-btn-green;
     }
   }
 
