@@ -1,10 +1,28 @@
-.btn:link,
-.btn:active,
-.btn:visited {
-  font-size: 2rem;
-  color: $color-font-secondary;
-  background-color: $color-btn-background;
-  padding: 2rem 2.5rem;
-  text-transform: uppercase;
-  text-decoration: none;
+.btn {
+  &:visited,
+  &:active,
+  &:link {
+    font-size: 2rem;
+    color: $color-font-secondary;
+    background-color: $color-btn-orange;
+    padding: 2rem 2.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  &--blue {
+    &:visited,
+    &:active,
+    &:link {
+      background-color: #5585a2;
+    }
+  }
+
+  &--wide {
+    &:visited,
+    &:active,
+    &:link {
+      padding: 2rem 4rem;
+    }
+  }
 }

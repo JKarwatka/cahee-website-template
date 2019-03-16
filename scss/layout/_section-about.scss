@@ -6,8 +6,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: $padding-big;
+    padding-bottom: $padding-big;
   }
 
   &__text-container {
@@ -17,15 +17,4 @@
   &__image {
     flex: 0 0 50%;
   }
-}
-.About_Us {
-  font-size: 90px;
-  font-family: 'Raleway';
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 0.3;
-  position: absolute;
-  left: 832.879px;
-  top: 1200px;
-  z-index: 149;
 }

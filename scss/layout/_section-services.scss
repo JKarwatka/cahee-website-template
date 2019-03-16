@@ -2,8 +2,8 @@
   background-color: $color-section-services;
   color: $color-font-secondary;
 
-  padding-bottom: 8rem;
-  padding-top: 8rem;
+  padding-bottom: $padding-big;
+  padding-top: $padding-big;
 
   &__container {
     display: flex;

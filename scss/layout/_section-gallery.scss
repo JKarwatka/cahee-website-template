@@ -1,0 +1,12 @@
+.section-gallery {
+  background-color: $color-section-gallery;
+  padding-top: $padding-big;
+  padding-bottom: $padding-big;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
