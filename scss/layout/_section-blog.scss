@@ -1,0 +1,18 @@
+.section-blog {
+  background-color: $color-section-blog;
+  padding-top: $padding-big;
+  padding-bottom: $padding-big;
+  color: $color-font-secondary;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+  }
+
+  &__calendar-card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

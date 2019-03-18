@@ -1,0 +1,74 @@
+.calendar-card {
+  background-image: linear-gradient(rgba(#000, 0.2), rgba(#000, 0.2)),
+    url(../img/calendar-card-background-1.png);
+  background-size: cover;
+  background-position: center;
+  flex: 1 0 300px;
+  padding: 4rem;
+  position: relative;
+  width: 100%;
+  padding-bottom: 85%;
+
+  &__date-container {
+    background-color: rgba(#000, 0.5);
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: 5;
+    left: 5;
+    border-radius: 1rem;
+  }
+
+  &__date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+
+    &--month {
+      font-size: 2rem;
+    }
+    &--day {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__text-container {
+    position: absolute;
+    bottom: 5;
+    left: 5;
+  }
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__paragraph {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+}
+
+._20 {
+  font-size: 32px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 0.781;
+  position: absolute;
+  left: 205.859px;
+  top: 4891.004px;
+  z-index: 70;
+}
+
+.NOV {
+  font-size: 21px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  line-height: 1.19;
+  position: absolute;
+  left: 201.861px;
+  top: 4917.005px;
+  z-index: 69;
+}

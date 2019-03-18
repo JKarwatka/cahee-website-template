@@ -18,6 +18,14 @@
     }
   }
 
+  &--red {
+    &:visited,
+    &:active,
+    &:link {
+      background-color: #f72b3b;
+    }
+  }
+
   &--wide {
     &:visited,
     &:active,
