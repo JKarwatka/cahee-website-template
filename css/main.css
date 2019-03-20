@@ -289,39 +289,30 @@ body {
   .section-subscribe__button {
     margin-left: 3rem; }
 
-.section-copyright {
-  background-color: #262626;
-  color: #b9b9b9;
-  font-size: 1.6rem; }
-  .section-copyright__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
-
-.footer {
+.section-contact {
   background-image: url(../img/footer-background.png);
   background-size: cover;
   background-position: center;
   padding-top: 8rem; }
-  .footer__paragraph {
+  .section-contact__paragraph {
     max-width: 33%;
     text-align: center;
     margin-bottom: 4rem; }
-  .footer__container {
+  .section-contact__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 8rem; }
-  .footer__row {
+  .section-contact__row {
     width: 100%;
     display: flex;
     align-items: stretch;
     justify-content: space-between; }
-  .footer__form-container {
+  .section-contact__form-container {
     display: flex;
     flex-direction: column;
     flex: 0 1 45%; }
-  .footer__form-item {
+  .section-contact__form-item {
     font-family: 'Raleway';
     color: #fff;
     font-weight: bold;
@@ -330,19 +321,28 @@ body {
     margin-bottom: 2rem;
     border: none;
     background-color: rgba(0, 196, 196, 0.5); }
-    .footer__form-item::placeholder {
+    .section-contact__form-item::placeholder {
       color: #fff;
       font-weight: normal; }
-    .footer__form-item:active, .footer__form-item:focus {
+    .section-contact__form-item:active, .section-contact__form-item:focus {
       background-color: rgba(0, 196, 196, 0.9); }
-  .footer__contact-info-container {
+  .section-contact__contact-info-container {
     flex: 0 1 45%; }
-  .footer__contact-info-title {
+  .section-contact__contact-info-title {
     font-weight: bold;
     font-size: 1.7rem;
     text-transform: uppercase; }
-  .footer__contact-info-paragraph {
+  .section-contact__contact-info-paragraph {
     font-size: 1.7rem; }
+
+.footer {
+  background-color: #262626;
+  color: #b9b9b9;
+  font-size: 1.6rem; }
+  .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
 
 .section-blog {
   background-color: #b07cf7;
