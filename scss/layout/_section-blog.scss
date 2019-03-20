@@ -7,12 +7,15 @@
   &__container {
     display: flex;
     justify-content: center;
-    flex-flow: column nowrap;
+    align-items: center;
+    flex-direction: column;
   }
 
   &__calendar-card-container {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: $padding-big;
   }
 }

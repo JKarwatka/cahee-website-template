@@ -3,20 +3,28 @@
     url(../img/calendar-card-background-1.png);
   background-size: cover;
   background-position: center;
-  flex: 1 0 300px;
+  flex: 1 0 25%;
   padding: 4rem;
   position: relative;
+  min-width: 30rem;
   width: 100%;
-  padding-bottom: 85%;
+
+  &:before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-bottom: (30 / 37) * 100%;
+  }
 
   &__date-container {
     background-color: rgba(#000, 0.5);
-    width: 6rem;
-    height: 6rem;
+    width: 7rem;
+    height: 7rem;
     position: absolute;
-    top: 5;
-    left: 5;
+    top: 1rem;
+    left: 1rem;
     border-radius: 1rem;
+    padding: 0.5rem;
   }
 
   &__date {
@@ -27,7 +35,8 @@
     font-weight: bold;
 
     &--month {
-      font-size: 2rem;
+      font-size: 2.1rem;
+      text-transform: uppercase;
     }
     &--day {
       font-size: 3.2rem;
@@ -36,8 +45,8 @@
 
   &__text-container {
     position: absolute;
-    bottom: 5;
-    left: 5;
+    bottom: 2rem;
+    left: 1rem;
   }
   &__title {
     font-size: 2rem;
@@ -48,27 +57,4 @@
     font-size: 1.6rem;
     font-weight: 300;
   }
-}
-
-._20 {
-  font-size: 32px;
-  font-family: "Raleway";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 0.781;
-  position: absolute;
-  left: 205.859px;
-  top: 4891.004px;
-  z-index: 70;
-}
-
-.NOV {
-  font-size: 21px;
-  font-family: "Raleway";
-  color: rgb(255, 255, 255);
-  line-height: 1.19;
-  position: absolute;
-  left: 201.861px;
-  top: 4917.005px;
-  z-index: 69;
 }
