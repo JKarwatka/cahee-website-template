@@ -22,53 +22,56 @@
 
   <body>
     <header class="header">
-      <div class="container header__navbar">
-        <div class="header__logo">Cahee</div>
-        <nav class="header__nav">
-          <ul>
-            <li class="header__nav-item"><a href="#">Home</a></li>
-            <li class="header__nav-item"><a href="#">About</a></li>
-            <li class="header__nav-item"><a href="#">Services</a></li>
-            <li class="header__nav-item"><a href="#">Gallery</a></li>
-            <li class="header__nav-item"><a href="#">Blog</a></li>
-            <li class="header__nav-item"><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+      <div class="header__navbar">
+        <div class="container header__navbar-container">
+          <h1 class="logo">Cahee</h1>
+          <nav class="header__nav">
+            <ul>
+              <li class="header__nav-item"><a href="#">Home</a></li>
+              <li class="header__nav-item"><a href="#">About</a></li>
+              <li class="header__nav-item"><a href="#">Services</a></li>
+              <li class="header__nav-item"><a href="#">Gallery</a></li>
+              <li class="header__nav-item"><a href="#">Blog</a></li>
+              <li class="header__nav-item"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-
-      <div class="container header__text-container">
-        <h1 class="header__title">Fresh Life</h1>
-        <p class="header__paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non
-          urna sed leo ullamcorper ultricies. In non faucibus nisi, vel aliquam
-          ipsum. Morbi faucibus, metus et mollis lacinia, mi dui consequat nibh,
-          venenatis consectetur orci sapien in lacus.
-        </p>
-        <a class="btn" href="#">Get Free Now</a>
+      <div class="container">
+        <div class="container header__text-container">
+          <h2 class="header__title">Fresh Life</h2>
+          <p class="section-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non
+            urna sed leo ullamcorper ultricies. In non faucibus nisi, vel
+            aliquam ipsum. Morbi faucibus, metus et mollis lacinia, mi dui
+            consequat nibh, venenatis consectetur orci sapien in lacus.
+          </p>
+          <a class="btn" href="#">Get Free Now</a>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="section-about">
         <div class="container section-about__container">
-          <img
-            class="section-about__image"
-            src="./img/about-image.png"
-            alt=""
-          />
+          <div class="section-about__image-container">
+            <img
+              class="section-about__image"
+              src="./img/about-image.png"
+              alt=""
+            />
+          </div>
           <div class="section-about__text-container">
-            <h2 class="section-title">About Us</h2>
-            <p class="section-paragraph">
+            <h2 class="section-title section-title--margin-small">About Us</h2>
+            <p class="section-paragraph section-paragraph--margin-small">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non
               urna sed leo ullamcorper ultricies. In non faucibus nisi, vel
-              aliquam ipsum. Morbi faucibus, metus et mollis lacinia, mi dui
-              consequat nibh, venenatis consectetur orci sapien in lacus.
+              aliquam ipsum.
             </p>
             <p class="section-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non
               urna sed leo ullamcorper ultricies. In non faucibus nisi, vel
-              aliquam ipsum. Morbi faucibus, metus et mollis lacinia, mi dui
-              consequat nibh, venenatis consectetur orci sapien in lacus.
+              aliquam ipsum.
             </p>
           </div>
         </div>
@@ -102,11 +105,10 @@
       <section class="section-gallery">
         <div class="container section-gallery__container">
           <h2 class="section-title">Gallery</h2>
-          <p class="section-paragraph">
+          <p class="section-paragraph section-paragraph--centered-wide">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non
             urna sed leo ullamcorper ultricies. In non faucibus nisi, vel
-            aliquam ipsum. Morbi faucibus, metus et mollis lacinia, mi dui
-            consequat nibh, venenatis consectetur orci sapien in lacus.
+            aliquam ipsum.
           </p>
           <div class="gallery-grid">
             <div class="gallery-grid__item gallery-grid__item--1">
@@ -173,7 +175,7 @@
       <section class="section-blog">
         <div class="container section-blog__container">
           <h2 class="section-title">Blog</h2>
-          <p class="section-paragraph">
+          <p class="section-paragraph section-paragraph--centered-wide">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non
             urna sed leo ullamcorper ultricies. In non faucibus nisi, vel
             aliquam ipsum. Morbi faucibus, metus et mollis lacinia, mi dui
@@ -234,6 +236,69 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-paragraph section-paragraph--centered-narrow">
+          For new projects ideas, business or anything you'd like to discuss
+          please contact me!
+        </p>
+        <div class="footer__row">
+          <form action="" class="footer__form-container">
+            <input
+              class="footer__form-item"
+              type="text"
+              name=""
+              id=""
+              placeholder="Your name..."
+            />
+            <input
+              class="footer__form-item"
+              type="email"
+              name=""
+              id=""
+              placeholder="Your email..."
+            />
+            <input
+              class="footer__form-item"
+              type="tel"
+              name=""
+              id=""
+              placeholder="Your phone number..."
+            />
+            <textarea
+              class="footer__form-item"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Your message..."
+            ></textarea>
+          </form>
+          <div class="footer__contact-info-container">
+            <h3 class="footer__contact-info-title">Adress</h3>
+            <p class="footer__contact-info-paragraph">
+              123 City name, Street, City, Country
+            </p>
+            <h3 class="footer__contact-info-title">Email</h3>
+            <p class="footer__contact-info-paragraph">cahee@domain</p>
+            <h3 class="footer__contact-info-title">Phone</h3>
+            <p class="footer__contact-info-paragraph">+0123456789</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-copyright">
+        <div class="container section-copyright__container">
+          <p class="section-copyright__copyright">
+            © 2015 Company. All right reserved.
+          </p>
+          <p class="logo logo--small">Cahee</p>
+          <p class="section-copyright__made-by">
+            Made with love by Jakub Karwatka
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
     <script

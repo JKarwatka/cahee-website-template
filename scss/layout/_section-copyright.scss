@@ -1,0 +1,11 @@
+.section-copyright {
+  background-color: $color-section-copyright;
+  color: $color-font-tertiary;
+  font-size: 1.6rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
