@@ -23,19 +23,6 @@ body {
   margin-bottom: 2.5rem;
   line-height: 1.6; }
 
-.Abore_Cahee_magna_aliqua__Ut_enim_ad_minim_veni {
-  font-size: 17px;
-  font-family: 'Raleway';
-  color: white;
-  line-height: 1.588;
-  text-align: left;
-  position: absolute;
-  left: 834.893px;
-  top: 1305.771px;
-  width: 499px;
-  height: 188px;
-  z-index: 150; }
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -52,8 +39,13 @@ body {
 .btn--blue:visited, .btn--blue:active, .btn--blue:link {
   background-color: #5585a2; }
 
+<<<<<<< HEAD
 .btn--green:visited, .btn--green:active, .btn--green:link {
   background-color: #96b92c; }
+=======
+.btn--red:visited, .btn--red:active, .btn--red:link {
+  background-color: #f72b3b; }
+>>>>>>> 983e2268cc4d17113ad9dab7212cb1489378f882
 
 .btn--wide:visited, .btn--wide:active, .btn--wide:link {
   padding: 2rem 4rem; }
@@ -76,6 +68,65 @@ body {
     border-left: 0.3rem solid #262626;
     padding: 3rem;
     flex: 0 0 20%; }
+
+.calendar-card {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/calendar-card-background-1.png);
+  background-size: cover;
+  background-position: center;
+  flex: 1 0 300px;
+  padding: 4rem;
+  position: relative;
+  width: 100%;
+  padding-bottom: 85%; }
+  .calendar-card__date-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: 5;
+    left: 5;
+    border-radius: 1rem; }
+  .calendar-card__date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold; }
+    .calendar-card__date--month {
+      font-size: 2rem; }
+    .calendar-card__date--day {
+      font-size: 3.2rem; }
+  .calendar-card__text-container {
+    position: absolute;
+    bottom: 5;
+    left: 5; }
+  .calendar-card__title {
+    font-size: 2rem;
+    margin-bottom: 2rem; }
+  .calendar-card__paragraph {
+    font-size: 1.6rem;
+    font-weight: 300; }
+
+._20 {
+  font-size: 32px;
+  font-family: "Raleway";
+  color: white;
+  font-weight: bold;
+  line-height: 0.781;
+  position: absolute;
+  left: 205.859px;
+  top: 4891.004px;
+  z-index: 70; }
+
+.NOV {
+  font-size: 21px;
+  font-family: "Raleway";
+  color: white;
+  line-height: 1.19;
+  position: absolute;
+  left: 201.861px;
+  top: 4917.005px;
+  z-index: 69; }
 
 .gallery-grid {
   margin-bottom: 8rem;
@@ -196,6 +247,7 @@ body {
     justify-content: center;
     flex-direction: column; }
 
+<<<<<<< HEAD
 .section-subscribe {
   background-image: url(../img/subscribe-background.png);
   background-size: cover;
@@ -219,3 +271,18 @@ body {
     min-width: 57rem; }
   .section-subscribe__button {
     margin-left: 3rem; }
+=======
+.section-blog {
+  background-color: #b07cf7;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  color: #fff; }
+  .section-blog__container {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap; }
+  .section-blog__calendar-card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+>>>>>>> 983e2268cc4d17113ad9dab7212cb1489378f882
