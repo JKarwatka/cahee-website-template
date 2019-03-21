@@ -1,4 +1,6 @@
 .btn {
+  box-sizing: border-box;
+  
   &:visited,
   &:active,
   &:link {
@@ -8,6 +10,7 @@
     padding: 2rem 2.5rem;
     text-transform: uppercase;
     text-decoration: none;
+    box-shadow: 0 0.5rem 1rem rgba(#000, 0.3);
   }
 
   &--blue {

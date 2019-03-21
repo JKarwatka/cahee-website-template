@@ -1,13 +1,33 @@
 .calendar-card {
-  background-image: linear-gradient(rgba(#000, 0.2), rgba(#000, 0.2)),
-    url(../img/calendar-card-background-1.png);
   background-size: cover;
   background-position: center;
-  flex: 1 0 25%;
+  flex: 0 0 30%;
   padding: 4rem;
   position: relative;
   min-width: 30rem;
   width: 100%;
+  box-shadow: 0 1rem 4rem rgba(#000, 0);
+  transition: box-shadow 0.2s ease-in;
+
+  &:hover{
+    box-shadow: 0 1rem 2rem rgba(#000, 0.4);
+  }
+
+  &--1{
+    background-image: linear-gradient(to top,rgba(#000, 0.9),30%, rgba(#000, 0.1)),
+    url(../img/calendar-card-background-1.png);
+  }
+
+  &--2{
+    background-image: linear-gradient(to top,rgba(#000, 0.9),30%, rgba(#000, 0.1)),
+    url(../img/calendar-card-background-2.png);
+  }
+
+  &--3{
+    background-image: linear-gradient(to top,rgba(#000, 0.9),30%, rgba(#000, 0.1)),
+    url(../img/calendar-card-background-3.png);
+  }
+
 
   &:before {
     display: block;

@@ -6,7 +6,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -38,25 +39,24 @@ body {
   margin: 0 auto;
   padding: 0 1.5rem; }
 
-.btn:visited, .btn:active, .btn:link {
-  font-size: 2rem;
-  color: #fff;
-  background-color: #ff6033;
-  padding: 2rem 2.5rem;
-  text-transform: uppercase;
-  text-decoration: none; }
-
-.btn--blue:visited, .btn--blue:active, .btn--blue:link {
-  background-color: #5585a2; }
-
-.btn--green:visited, .btn--green:active, .btn--green:link {
-  background-color: #96b92c; }
-
-.btn--red:visited, .btn--red:active, .btn--red:link {
-  background-color: #f72b3b; }
-
-.btn--wide:visited, .btn--wide:active, .btn--wide:link {
-  padding: 2rem 4rem; }
+.btn {
+  box-sizing: border-box; }
+  .btn:visited, .btn:active, .btn:link {
+    font-size: 2rem;
+    color: #fff;
+    background-color: #ff6033;
+    padding: 2rem 2.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
+  .btn--blue:visited, .btn--blue:active, .btn--blue:link {
+    background-color: #5585a2; }
+  .btn--green:visited, .btn--green:active, .btn--green:link {
+    background-color: #96b92c; }
+  .btn--red:visited, .btn--red:active, .btn--red:link {
+    background-color: #f72b3b; }
+  .btn--wide:visited, .btn--wide:active, .btn--wide:link {
+    padding: 2rem 4rem; }
 
 .card {
   display: flex;
@@ -70,12 +70,26 @@ body {
   background-color: white; }
   .card__title {
     font-size: 2rem;
-    flex: 1 0 auto;
+    flex: 0 0 80%;
     text-align: center; }
-  .card__image {
-    border-left: 0.3rem solid #262626;
+  .card__image-container {
     padding: 3rem;
-    flex: 0 0 20%; }
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    .card__image-container:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0.2rem;
+      background-color: #262626;
+      height: 100%; }
+  .card__image {
+    width: 100%;
+    height: 100%; }
 
 .logo {
   font-size: 5rem;
@@ -88,7 +102,7 @@ body {
   margin-bottom: 8rem;
   width: 100%;
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
   grid-template-rows: auto auto auto;
   column-gap: 3rem;
   row-gap: 3rem; }
@@ -98,41 +112,55 @@ body {
     margin: 0;
     padding: 0;
     object-fit: cover; }
-  .gallery-grid__item--1 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3; }
-  .gallery-grid__item--2 {
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 1; }
-  .gallery-grid__item--3 {
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: 2; }
-  .gallery-grid__item--4 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 3; }
-  .gallery-grid__item--5 {
-    grid-column-start: 3;
-    grid-column-end: 6;
-    grid-row-start: 3;
-    grid-row-end: 3; }
+  .gallery-grid__item {
+    transition: box-shadow 0.2s ease-in;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0); }
+    .gallery-grid__item:hover {
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6); }
+    .gallery-grid__item--1 {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 3; }
+    .gallery-grid__item--2 {
+      grid-column-start: 4;
+      grid-column-end: 6;
+      grid-row-start: 1;
+      grid-row-end: 1; }
+    .gallery-grid__item--3 {
+      grid-column-start: 4;
+      grid-column-end: 6;
+      grid-row-start: 2;
+      grid-row-end: 2; }
+    .gallery-grid__item--4 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 3; }
+    .gallery-grid__item--5 {
+      grid-column-start: 3;
+      grid-column-end: 6;
+      grid-row-start: 3;
+      grid-row-end: 3; }
 
 .calendar-card {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/calendar-card-background-1.png);
   background-size: cover;
   background-position: center;
-  flex: 1 0 25%;
+  flex: 0 0 30%;
   padding: 4rem;
   position: relative;
   min-width: 30rem;
-  width: 100%; }
+  width: 100%;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0);
+  transition: box-shadow 0.2s ease-in; }
+  .calendar-card:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
+  .calendar-card--1 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), 30%, rgba(0, 0, 0, 0.1)), url(../img/calendar-card-background-1.png); }
+  .calendar-card--2 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), 30%, rgba(0, 0, 0, 0.1)), url(../img/calendar-card-background-2.png); }
+  .calendar-card--3 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), 30%, rgba(0, 0, 0, 0.1)), url(../img/calendar-card-background-3.png); }
   .calendar-card:before {
     display: block;
     content: '';
@@ -184,7 +212,7 @@ body {
     left: 0;
     width: 100%;
     padding: 3rem 0;
-    transition: all 0.3s ease-in; }
+    transition: padding 0.3s ease-in; }
     .header__navbar--shrink {
       padding: 0;
       background-color: white;
@@ -200,8 +228,7 @@ body {
     align-items: center; }
   .header__nav-item {
     margin-left: 2rem;
-    position: relative;
-    transition: all 1s ease-in; }
+    position: relative; }
     .header__nav-item a:link,
     .header__nav-item a:active,
     .header__nav-item a:visited {
@@ -210,14 +237,24 @@ body {
       font-size: 1.6rem;
       text-transform: uppercase;
       font-weight: bolder; }
-    .header__nav-item:hover:after {
+    .header__nav-item:before {
       content: "";
       display: block;
       position: absolute;
-      top: 0;
+      top: -1rem;
+      left: 50%;
+      width: 0;
+      height: 3px;
+      background-color: orange;
+      transition: all 0.2s ease-in; }
+    .header__nav-item:hover:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -1rem;
       left: 0;
       width: 100%;
-      height: 100%;
+      height: 3px;
       background-color: orange; }
   .header__text-container {
     margin: 0;
@@ -246,7 +283,9 @@ body {
   .section-about__image {
     width: 100%;
     height: 100%;
-    object-fit: contain; }
+    object-fit: contain;
+    border-radius: 100%;
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.4); }
 
 .section-services {
   background-color: #70bfff;
@@ -264,8 +303,7 @@ body {
     align-items: center;
     justify-content: center;
     justify-self: stretch;
-    width: 100%;
-    height: 100%;
+    align-self: stretch;
     background-image: url(../../img/services-background.png);
     background-size: contain;
     background-position: center;

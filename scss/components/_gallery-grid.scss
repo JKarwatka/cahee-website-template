@@ -2,7 +2,7 @@
   margin-bottom: $padding-big;
   width: 100%;
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto ;
   grid-template-rows: auto auto auto;
   column-gap: 3rem;
   row-gap: 3rem;
@@ -16,6 +16,11 @@
   }
 
   &__item {
+    transition: box-shadow 0.2s ease-in;
+    box-shadow: 0 0.5rem 2rem rgba(#000, 0);
+    &:hover{
+      box-shadow: 0 1rem 2rem rgba(#000, 0.6);
+    }
     &--1 {
       grid-column-start: 1;
       grid-column-end: 4;
